@@ -1,0 +1,53 @@
+# Paths
+root: ./data
+make_model_mat: ./data/misc/make_model_name.mat
+car_type_mat:   ./data/misc/car_type.mat
+attributes_txt: ./data/misc/attributes.txt
+
+# Splits (use CompCars classification lists)
+train_list: ./data/train_test_split/classification/train.txt
+val_list:   ./data/train_test_split/classification/test.txt
+
+index_csv:   ./data/compcars/indexes/index.csv
+vocabs_json: ./data/compcars/indexes/vocabs.json
+
+# Model
+backbone: vit_large_patch14_dinov2.lvd142m
+img_size: 448
+
+# Optimisation
+batch_size: 48
+num_workers: 8
+grad_accum_steps: 1
+epochs: 50
+lr: 2.0e-5
+weight_decay: 0.05
+label_smoothing: 0.1
+warmup_epochs: 10
+layerwise_lr_decay: 0.8  
+drop_path_rate: 0.2      
+val_batch_size: 192
+
+# Loss weights
+loss_weights:
+  model: 1.0 
+  year:  0.2
+  view:  0.05 
+  type:  0.3 
+
+# Augmentations
+use_bbox: true
+random_resized_crop_scale: [0.8, 1.0]
+randaugment: { N: 1, M: 7 }
+mixup_alpha: 0.2
+cutmix_alpha: 0.2
+hflip_for_view: false   
+random_erasing: true
+
+# Eval
+tta: { flips: false, scales: [1.0] }
+rerank_with_type_view: true
+
+# Checkpoints
+out_dir: ./runs
+save_best_on: model_macro_f1
