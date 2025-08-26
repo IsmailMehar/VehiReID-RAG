@@ -1,0 +1,12 @@
+torch>=2.7.1+cu118
+torchvision>=0.22.1+cu118
+torchaudio>=2.7.1+cu118
+timm
+numpy
+pandas
+scikit-learn
+scipy
+matplotlib
+pillow
+PyYAML
+tqdm
