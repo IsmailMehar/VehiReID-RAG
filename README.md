@@ -50,6 +50,3 @@ Example:
 python src/predict.py --ckpt runs/best.pt --image carimage.jpg
 ```
 
-## Note
-The code you use to run training and evaluation depends on your system. You can ask gpt if your struggling with that part.
-
