@@ -17,7 +17,7 @@ This repository includes code to:
 ---
 
 ## Repository Structure
-
+```text
 VehiReID-RAG/
 │── config/
 │   └── default.yaml
@@ -38,7 +38,7 @@ VehiReID-RAG/
 │   └── utils.py
 │── README.md
 │── requirements.txt
-
+```
 ---
 
 ## Requirements
