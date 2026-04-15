@@ -232,7 +232,7 @@ Check image path
 
 ---
 
-## 📚 Citation
+## Citation
 
 Linjie Yang, Ping Luo, Chen Change Loy, Xiaoou Tang.  
 A Large-Scale Car Dataset for Fine-Grained Categorisation and Verification.  
