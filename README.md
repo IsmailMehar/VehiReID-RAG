@@ -62,7 +62,7 @@ https://mmlab.ie.cuhk.edu.hk/datasets/comp_cars/instruction.txt
 - Do NOT upload or redistribute the dataset
 
 ### Expected Directory Structure
-
+```text
 data/
 └── compcars/
     ├── image/
@@ -70,7 +70,7 @@ data/
     ├── train_test_split/
     ├── part/
     └── attribute/
-
+```
 ---
 
 ## Installation
